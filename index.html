@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gansbaai Shark Coast Bookings | Home</title>
+    <meta name="description"
+        content="The Ultimate Gateway to Gansbaai's Marine & Coastal Experiences. Book Shark Cage Diving, Whale Watching, and more.">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- TOP NAV BAR -->
+   <nav>
+    <div class="logo">Gansbaai Shark Coast<br><span class="logo-sub">Bookings</span></div>
+    <div class="nav-links">
+        <a href="index.html">Activities</a>
+        <a href="#">About Us</a>
+        <a href="tel:+27716301921" class="nav-call">📞 +27 71 6301 921</a>
+        <a href="#" class="btn-book-nav">Enquire Now</a>
+    </div>
+</nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Adventure Starts Here</h1>
+            <p>The Ultimate Gateway to Gansbaai's Marine & Coastal Experiences</p>
+            <a href="#activities" class="main-cta">Explore All Activities</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="activities" class="activities-section">
+            <div class="container">
+                <h2 class="section-title">The Main Event</h2>
+                <div class="primary-focus">
+                    <div class="card category-card" onclick="window.location.href='shark-cage-diving.html';">
+                        <div class="card-img shark-bg"></div>
+                        <div class="card-content">
+                            <div class="badge">Most Popular</div>
+                            <h3>Shark Cage Diving</h3>
+                            <p>Experience the world's premier Great White and Copper Shark destination face-to-face.</p>
+                            <span class="btn-text">Available Operators →</span>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="section-title">Beyond the Cage</h2>
+                <div class="grid">
+                    <div class="card category-card" onclick="window.location.href='whale-watching.html';">
+                        <div class="card-img whale-bg"></div>
+                        <div class="card-content">
+                            <h3>Whale Watching</h3>
+                            <p>Witness the majestic Southern Right Whales in the bay (Seasonal).</p>
+                            <span class="btn-text">Explore Tours →</span>
+                        </div>
+                    </div>
+                    <div class="card category-card" onclick="window.location.href='eco-tours.html';">
+                        <div class="card-img eco-bg"></div>
+                        <div class="card-content">
+                            <h3>Eco-Marine Tours</h3>
+                            <p>Discover the Marine Big 5: Sharks, Whales, Seals, Penguins, and Dolphins.</p>
+                            <span class="btn-text">Explore Tours →</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="location-section">
+            <div class="container">
+                <h2 class="section-title">Our Gansbaai Base</h2>
+                <p style="text-align: center; margin-bottom: 20px;">Located at Great White Junction—the hub for all
+                    local departures.</p>
+                <div class="map-wrapper">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3301.637505167527!2d19.349!3d-34.614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDM2JzUwLjQiUyAxOcKwMjAnNTYuNCJF!5e0!3m2!1sen!2sza!4v1651680000000!5m2!1sen!2sza"
+                        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class="trust-banner">
+            <div class="container">
+                <h3>Why Book With Us?</h3>
+                <div class="trust-items">
+                    <div class="trust-item"><span>✅</span> Vetted Operators</div>
+                    <div class="trust-item"><span>✅</span> Local Expertise</div>
+                    <div class="trust-item"><span>✅</span> Live Weather Updates</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="weather-teaser">
+            <h3>Heading out today?</h3>
+            <p>Check the <a href="weather.html">Live Swell & Wind Report</a> before you arrive.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Gansbaai Shark Coast Bookings. Your local adventure experts.</p>
+    </footer>
+
+    <a href="https://wa.me/27716301921?text=Hi! I'm on the Gansbaai Shark Coast website and would like to enquire about a booking."
+        class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Chat on WhatsApp">
+    </a>
+
+
+    <!--Start of Tawk.to Script-->
+    <script>
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+
+        // 1. The Standard Tawk.to Loader Script
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/69fc36c9d66edf1c34699450/1jo0jc1ln';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+
+        // 2. The Button Listener to trigger the chat window
+        document.addEventListener('DOMContentLoaded', () => {
+            const enquireBtn = document.querySelector('.btn-book-nav');
+
+            if (enquireBtn) {
+                enquireBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    Tawk_API.maximize(); // Opens the chat window immediately
+                });
+            }
+        });
+    </script>
+    <!--End of Tawk.to Script-->
+</body>
+
+</html>

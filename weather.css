@@ -1,0 +1,108 @@
+  /* =========================================
+   WEATHER PAGE SPECIFIC (Full Screen & Brand Aligned)
+   ========================================= */
+
+:root {
+    --primary-blue: #0a2342;
+    --accent-gold: #c5a059;
+    --white: #ffffff;
+    --light-bg: #f4f7f9;
+    --text-dark: #333;
+}
+
+/* Force the body to be a locked container */
+html, body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+}
+
+/* 1. Brand Aligned Navigation */
+nav {
+    flex-shrink: 0;
+    background: var(--white);
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.logo {
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--primary-blue);
+    line-height: 1.1;
+}
+
+.logo-sub {
+    font-size: 14px;
+    color: var(--accent-gold);
+    letter-spacing: 1px;
+    text-transform: none;
+    display: block;
+}
+
+.nav-links a {
+    color: var(--primary-blue);
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.btn-book-nav {
+    background: var(--accent-gold);
+    color: var(--white) !important;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+/* 2. Main Content - The Map Wrapper */
+.weather-container {
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#windy-frame-container {
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    background: #e0e0e0;
+}
+
+#windy-frame-container iframe {
+    width: 100% !important;
+    height: 100% !important;
+    border: none;
+    display: block;
+}
+
+/* 3. The Slim Footer */
+footer {
+    flex-shrink: 0;
+    background: var(--white);
+    padding: 12px 0; /* Tightened height */
+    text-align: center;
+    border-top: 1px solid #eee;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #888;
+}
