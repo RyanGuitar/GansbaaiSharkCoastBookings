@@ -12,16 +12,35 @@
 
 <body>
 
-    <!-- TOP NAV BAR -->
+    <!-- Original TOP NAV BAR 
    <nav>
     <div class="logo">Gansbaai Shark Coast<br><span class="logo-sub">Bookings</span></div>
     <div class="nav-links">
         <a href="index.html">Activities</a>
+        <a href="weather.html">Sea Conditions</a>
         <a href="#">About Us</a>
         <a href="tel:+27716301921" class="nav-call">📞 +27 71 6301 921</a>
         <a href="#" class="btn-book-nav">Enquire Now</a>
     </div>
-</nav>
+</nav> -->
+
+    <!-- NAV -->
+    <nav>
+        <div class="logo">Gansbaai Shark Coast<br><span class="logo-sub">Bookings</span></div>
+
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <div class="nav-links" id="nav-list">
+            <a href="index.html">Activities</a>
+            <a href="#">About Us</a>
+            <a href="tel:+27716301921" class="nav-call">📞 +27 71 630 1921</a>
+            <a href="#" class="btn-book-nav">Enquire Now</a>
+        </div>
+    </nav>
 
     <header class="hero">
         <div class="hero-content">
@@ -132,6 +151,20 @@
                 enquireBtn.addEventListener('click', (e) => {
                     e.preventDefault();
                     Tawk_API.maximize(); // Opens the chat window immediately
+                });
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const menu = document.querySelector('#mobile-menu');
+            const navList = document.querySelector('#nav-list');
+
+            if (menu) {
+                menu.addEventListener('click', () => {
+                    navList.classList.toggle('active');
+
+                    // Optional: Animate hamburger to an 'X'
+                    menu.classList.toggle('is-active');
                 });
             }
         });
