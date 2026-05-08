@@ -106,3 +106,68 @@ footer p {
     font-size: 0.85rem;
     color: #888;
 }
+
+/* Mobile tweak: if the bar gets too tight, we can hide the number on small screens */
+@media screen and (max-width: 768px) {
+    .nav-call {
+        font-size: 1.1rem; /* Make the icon a bit bigger for tapping */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 5px;
+    }
+    .nav-call {
+        font-size: 0.8rem; /* Shrink the number slightly to fit */
+    }
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hidden by default */
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 70px; /* Adjust based on your nav height */
+        left: 0;
+        background: var(--white);
+        padding: 20px;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        display: flex; /* Shown when toggled */
+    }
+
+    .nav-links a {
+        margin: 10px 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    /* Hamburger Bars */
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+    }
+
+    .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        background-color: var(--primary-blue);
+        transition: 0.3s;
+    }
+}
+
+/* Hide hamburger on desktop */
+@media screen and (min-width: 769px) {
+    .menu-toggle { display: none; }
+}
