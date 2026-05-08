@@ -15,12 +15,21 @@
 
     <nav>
         <div class="logo">Gansbaai Shark Coast<br><span class="logo-sub">Bookings</span></div>
-        <div class="nav-links">
+
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <div class="nav-links" id="nav-list">
             <a href="index.html">Activities</a>
             <a href="#">About Us</a>
+            <a href="tel:+27716301921" class="nav-call">📞 +27 71 630 1921</a>
             <a href="#" class="btn-book-nav">Enquire Now</a>
         </div>
     </nav>
+
 
     <main class="weather-container">
         <div id="windy-frame-container">
@@ -29,11 +38,12 @@
     </main>
 
 
+
     <footer>
         <p>© 2026 Gansbaai Shark Coast Bookings. Your local adventure experts.</p>
     </footer>
 
-     <script>
+    <script>
            document.addEventListener('DOMContentLoaded', () => {
             const menu = document.querySelector('#mobile-menu');
             const navList = document.querySelector('#nav-list');
