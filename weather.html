@@ -33,6 +33,22 @@
         <p>© 2026 Gansbaai Shark Coast Bookings. Your local adventure experts.</p>
     </footer>
 
+     <script>
+           document.addEventListener('DOMContentLoaded', () => {
+            const menu = document.querySelector('#mobile-menu');
+            const navList = document.querySelector('#nav-list');
+
+            if (menu) {
+                menu.addEventListener('click', () => {
+                    navList.classList.toggle('active');
+
+                    // Optional: Animate hamburger to an 'X'
+                    menu.classList.toggle('is-active');
+                });
+            }
+        });
+    </script>
+
 </body>
 
 </html>
